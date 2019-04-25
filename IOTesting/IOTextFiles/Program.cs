@@ -11,10 +11,10 @@ namespace IOTextFiles
 
 			Console.WriteLine (_STable.stable[0]);
 
-			if (_io.save ()) {
-				Console.WriteLine ("Таблицата е запаметена успешно");
+			if (_io.open ()) {   //(_io.save ()) {
+				Console.WriteLine ("Таблицата е прочетена успешно");
 			} else {
-				Console.WriteLine ("Таблицата НЕ е запаметена успешно");
+				Console.WriteLine ("Таблицата НЕ е прочетена успешно");
 			}
 		}
 	}
